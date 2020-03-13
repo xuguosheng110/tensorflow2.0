@@ -3,7 +3,7 @@
 # @Time : 2020/3/12 23:43
 # @Author : xuguosheng
 # @contact: xgs11@qq.com
-# @Site : 
+# @Site :简单的数据操作
 # @File : character_1.py
 # @Software: PyCharm
 #!/usr/bin/env python
