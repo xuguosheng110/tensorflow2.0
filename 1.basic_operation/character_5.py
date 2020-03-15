@@ -116,8 +116,17 @@ print('use time is: ',time.time()-start)
 
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),
-    keras.layers.Dense(10, activation=tf.nn.softmax)
-])
+    keras.layers.Dense(10, activation=tf.nn.softmax)])
+print(len(model.weights))
+print(model.weights[0])
+print(model.weights[1])
+random_x = tf.random.normal(shape=(1,28,28),mean=0,stddev=0.1,dtype=tf.float32)
+random_y = model.predict(random_x)
+yyy = np.array(random_y)
+index = np.argmax(yyy)
+conf = np.max(yyy)
+print(random_y)
+print(index,conf)
 # 数据读取与测试，28 *28的灰度图
 # feature,label=x_train[0],y_train[0]
 # print(type(x_test),type(y_test))
