@@ -10,7 +10,7 @@
 #================================================================
 
 import tensorflow as tf
-import tensorflow.keras as keras
+from tensorflow import keras
 import numpy as np
 import time
 import sys
@@ -79,7 +79,6 @@ def evaluate_accuracy(data_iter,net):
         y = tf.cast(y,dtype=tf.int32)
         acc_sum +=np.sum(tf.cast(tf.argmax(net(x),axis =1),dtype=tf.int32)==y)
         n +=y.shape[0]
-    print(n)
     return acc_sum/n
 
 num_epochs, lr = 5, 0.1
@@ -116,11 +115,14 @@ print('use time is: ',time.time()-start)
 
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),
-    keras.layers.Dense(10, activation=tf.nn.softmax)
-])
-# 数据读取与测试，28 *28的灰度图
-# feature,label=x_train[0],y_train[0]
-# print(type(x_test),type(y_test))
-# print(feature,label)
-# cv2.imshow('first_img',feature)
-# cv2.waitKey(0)
+    # keras.layers.Conv2d()
+    keras.layers.Dense(10, activation=tf.nn.softmax)])
+lr = 0.05
+optimizer = keras.optimizers.SGD(lr)
+loss = 'sparse_categorical_crossentropy'
+model.compile(optimizer,loss,metrics=['accuracy'])
+
+model.fit(x_train,y_train,batch_size=256)
+
+test_loss, test_acc = model.evaluate(x_test, y_test)
+print('Test Acc:',test_acc)
