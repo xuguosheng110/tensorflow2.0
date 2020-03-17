@@ -5,12 +5,10 @@
 # @Site : 
 # @File : character_7.py
 # @Software: PyCharm
-# import tensorflow as tf
-# import numpy as np
-# from tensorflow import keras, nn, losses
-# from tensorflow.keras.layers import Dropout, Flatten, Dense
+
 
 import tensorflow as tf
+from tensorflow import keras
 import numpy as np
 #简单模型
 class MLP(tf.keras.Model):
@@ -53,7 +51,8 @@ XX = tf.random.uniform((2,4,5))
 net = FancyMLP()
 z = net(XX)
 print('z is: ',z)
-print('xxx is: ',net.variables)
+for i ,layer in enumerate(net.variables):
+    print(i,layer.shape)
 
 
 class Fancy_MLP(tf.keras.Model):
@@ -71,7 +70,49 @@ class Fancy_MLP(tf.keras.Model):
 #模型套模型
 net = tf.keras.Sequential()
 net.add(Fancy_MLP())
-net.add(tf.keras.layers.Dense(20))
+net.add(tf.keras.layers.Dense(20)) #20 是为了和后面相乘 与前一个模块对应
 net.add(FancyMLP())
-Y = net(XX)
+XXX = tf.random.uniform((3,5,8))
+Y = net(XXX)
 print('Y is: ',Y)
+
+#打印当前模型参数 两种方法一致
+for i ,layer in enumerate(net.variables):
+    print(i,layer.shape)
+for i ,layer in enumerate(net.weights):
+    print(i,layer.shape)
+
+class Linear(tf.keras.Model):
+    def __init__(self):
+        super().__init__()
+        self.d1 = tf.keras.layers.Dense(
+            units=10,
+            activation=None,
+            kernel_initializer=tf.zeros_initializer(),
+            bias_initializer=tf.zeros_initializer()
+        )
+        self.d2 = tf.keras.layers.Dense(
+            units=1,
+            activation=None,
+            kernel_initializer=tf.ones_initializer(),
+            bias_initializer=tf.ones_initializer()
+        )
+
+    def call(self, input):
+        output = self.d1(input)
+        output = self.d2(output)
+        return output
+
+X = tf.random.uniform((2,20))
+net = Linear()
+y =net(X)
+weights = net.get_weights()
+print('weights is: ',weights)
+net.save_weights("1-7saved_model.h5")
+
+net2 = Linear()
+net2(X)
+net2.load_weights("1-7saved_model.h5")
+yy = net2(X)
+print(y)
+print(yy)
