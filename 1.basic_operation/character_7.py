@@ -5,25 +5,73 @@
 # @Site : 
 # @File : character_7.py
 # @Software: PyCharm
+# import tensorflow as tf
+# import numpy as np
+# from tensorflow import keras, nn, losses
+# from tensorflow.keras.layers import Dropout, Flatten, Dense
+
 import tensorflow as tf
 import numpy as np
-from tensorflow import keras, nn, losses
-from tensorflow.keras.layers import Dropout, Flatten, Dense
+#简单模型
+class MLP(tf.keras.Model):
+    def __init__(self):
+        super().__init__()
+        self.flatten = tf.keras.layers.Flatten()
+        self.dens1   = tf.keras.layers.Dense(units=256,activation='relu')
+        self.dens2   = tf.keras.layers.Dense(units=10)
+
+    def __call__(self, inputs):
+        x = self.flatten(inputs)
+        x = self.dens1(x)
+        x = self.dens2(x)
+        return x
+
+X = tf.random.uniform((2,28))
+model = MLP()
+y =model(X)
+print('y is: ',y)
+#带常量模型
+class FancyMLP(tf.keras.Model):
+    def __init__(self):
+        super().__init__()
+        self.flatten = tf.keras.layers.Flatten()
+        self.rand_weight = tf.constant(tf.random.uniform((20,20)))
+        self.dense = tf.keras.layers.Dense(units=20,activation='relu')
+
+    def call(self,inputs):
+        x = self.flatten(inputs)
+        x = tf.nn.relu(tf.matmul(x,self.rand_weight)+1)
+        x = self.dense(x)
+        x = self.dense(x)
+        while tf.norm(x)>1:  #向量 张量 矩阵等的范数
+            x /= 2
+        if tf.norm(x) < 0.8:
+            x *= 10
+        return tf.reduce_sum(x)
+
+XX = tf.random.uniform((2,4,5))
+net = FancyMLP()
+z = net(XX)
+print('z is: ',z)
+print('xxx is: ',net.variables)
 
 
-def dropout(X, drop_prob):
-    assert 0 <= drop_prob <= 1
-    keep_prob = 1 - drop_prob
-    # 这种情况下把全部元素都丢弃
-    if keep_prob == 0:
-        return tf.zeros_like(X)
-    #初始mask为一个bool型数组，故需要强制类型转换
-    mask = tf.random.uniform(shape=X.shape, minval=0, maxval=1) < keep_prob
-    print(mask)
-    return tf.cast(mask, dtype=tf.float32) * tf.cast(X, dtype=tf.float32) / keep_prob
+class Fancy_MLP(tf.keras.Model):
+    def __init__(self):
+        super(Fancy_MLP, self).__init__()
+        self.net = tf.keras.Sequential()
+        self.net.add(tf.keras.layers.Flatten())
+        self.net.add(tf.keras.layers.Dense(64,activation='relu'))
+        self.net.add(tf.keras.layers.Dense(32,activation='relu'))
+        self.Dense = tf.keras.layers.Dense(16,activation='relu')
 
-X = tf.reshape(tf.range(0,20),shape=(5,4))
-print(X)
-print(dropout(X,1))
-print(dropout(X,0.2))
-print(dropout(X,0.5))
+    def call(self, inputs):
+        return self.Dense(self.net(inputs))
+
+#模型套模型
+net = tf.keras.Sequential()
+net.add(Fancy_MLP())
+net.add(tf.keras.layers.Dense(20))
+net.add(FancyMLP())
+Y = net(XX)
+print('Y is: ',Y)

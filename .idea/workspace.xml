@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90652c42-ad73-4c35-b770-90b451c7a8f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1.basic_operation/character_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.basic_operation/character_7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.basic_operation/character_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.basic_operation/character_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.basic_operation/character_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.basic_operation/character_7.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1.basic_operation/character_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1782">
+            <state>
               <caret line="56" selection-start-line="56" selection-end-line="56" selection-end-column="15" />
             </state>
           </provider>
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1.basic_operation/character_5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="126" column="36" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="36" />
+            <state relative-caret-position="907">
+              <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
               <folding>
                 <element signature="e#357#380#0" expanded="true" />
               </folding>
@@ -36,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1.basic_operation/character_6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            <state relative-caret-position="754">
+              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
                 <element signature="e#157#180#0" expanded="true" />
               </folding>
@@ -48,13 +46,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1.basic_operation/character_7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="796">
+              <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-end-line="54" />
               <folding>
-                <element signature="e#150#173#0" expanded="true" />
+                <element signature="e#303#326#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,16 +89,16 @@
         <option value="$PROJECT_DIR$/1.basic_operation/character_1.py" />
         <option value="$PROJECT_DIR$/character_5.py" />
         <option value="$PROJECT_DIR$/1.basic_operation/character_5.py" />
-        <option value="$PROJECT_DIR$/1.basic_operation/character_7.py" />
         <option value="$PROJECT_DIR$/1.basic_operation/character_6.py" />
+        <option value="$PROJECT_DIR$/1.basic_operation/character_7.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1211" />
-    <option name="y" value="43" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-29" />
+    <option name="y" value="9" />
     <option name="width" value="1357" />
-    <option name="height" value="1300" />
+    <option name="height" value="1389" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -147,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.character_6">
+  <component name="RunManager" selected="Python.character_7">
     <configuration name="character_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tensorflow2.0" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,8 +258,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.character_6" />
         <item itemvalue="Python.character_7" />
+        <item itemvalue="Python.character_6" />
         <item itemvalue="Python.character_5 (1)" />
         <item itemvalue="Python.character_5" />
         <item itemvalue="Python.character_1" />
@@ -280,12 +278,12 @@
       <updated>1584026470054</updated>
       <workItem from="1584026477855" duration="5466000" />
       <workItem from="1584266403611" duration="12286000" />
-      <workItem from="1584322455384" duration="13975000" />
+      <workItem from="1584322455384" duration="28752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31727000" />
+    <option name="totallyTimeSpent" value="46504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,16 +295,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1211" y="43" width="1357" height="1300" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14340787" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.073926866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2670753" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3947158" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24244833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39427662" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
@@ -344,6 +342,11 @@
           <line>16</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/1.basic_operation/character_7.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -351,8 +354,8 @@
     <SUITE FILE_PATH="coverage/tensorflow2_0$character_5.coverage" NAME="character_5 Coverage Results" MODIFIED="1584286084083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tensorflow2_0$character_5__1_.coverage" NAME="character_5 (1) Coverage Results" MODIFIED="1584339049855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1.basic_operation" />
     <SUITE FILE_PATH="coverage/tensorflow2_0$character_1.coverage" NAME="character_1 Coverage Results" MODIFIED="1584037640109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1.basic_operation" />
-    <SUITE FILE_PATH="coverage/tensorflow2_0$character_7.coverage" NAME="character_7 Coverage Results" MODIFIED="1584346858619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1.basic_operation" />
-    <SUITE FILE_PATH="coverage/tensorflow2_0$character_6.coverage" NAME="character_6 Coverage Results" MODIFIED="1584349168547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1.basic_operation" />
+    <SUITE FILE_PATH="coverage/tensorflow2_0$character_6.coverage" NAME="character_6 Coverage Results" MODIFIED="1584415150818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1.basic_operation" />
+    <SUITE FILE_PATH="coverage/tensorflow2_0$character_7.coverage" NAME="character_7 Coverage Results" MODIFIED="1584442795788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1.basic_operation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/1.basic_operation/character_2.py">
@@ -385,37 +388,51 @@
     <entry file="file://E:/Anoconda/envs/tf21/Lib/site-packages/tensorflow_core/python/ops/resource_variable_ops.py" />
     <entry file="file://$PROJECT_DIR$/1.basic_operation/character_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
+        <state>
           <caret line="56" selection-start-line="56" selection-end-line="56" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1.basic_operation/character_5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="126" column="36" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="36" />
+        <state relative-caret-position="907">
+          <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
           <folding>
             <element signature="e#357#380#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.basic_operation/character_7.py">
+    <entry file="file://$PROJECT_DIR$/1.basic_operation/character_6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="754">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding>
-            <element signature="e#150#173#0" expanded="true" />
+            <element signature="e#157#180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.basic_operation/character_6.py">
+    <entry file="file://D:/Anaconda/envs/tf2/Lib/site-packages/tensorflow_core/python/keras/engine/sequential.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="245">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/envs/tf2/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.basic_operation/character_7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-end-line="54" />
           <folding>
-            <element signature="e#157#180#0" expanded="true" />
+            <element signature="e#303#326#0" expanded="true" />
           </folding>
         </state>
       </provider>
