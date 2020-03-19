@@ -115,7 +115,6 @@ print('use time is: ',time.time()-start)
 
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),
-<<<<<<< HEAD
     keras.layers.Dense(10, activation=tf.nn.softmax)])
 print(len(model.weights))
 print(model.weights[0])
@@ -133,7 +132,6 @@ print(index,conf)
 # print(feature,label)
 # cv2.imshow('first_img',feature)
 # cv2.waitKey(0)
-=======
     # keras.layers.Conv2d()
     keras.layers.Dense(10, activation=tf.nn.softmax)])
 lr = 0.05
@@ -145,4 +143,3 @@ model.fit(x_train,y_train,batch_size=256)
 
 test_loss, test_acc = model.evaluate(x_test, y_test)
 print('Test Acc:',test_acc)
->>>>>>> f97e0bc5476cf091dc6ec1b374d46fcefe0682a7
